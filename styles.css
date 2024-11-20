@@ -1,0 +1,52 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.controls1{
+    flex-direction: row;
+    width: 100px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.controls2 {
+    width: 500px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.canvas {
+    width: 600px;
+    height: 400px;
+    background-color: darkgray;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.App{
+    width: 100%;
+    height: auto;
+    background-color: rgb(98, 176, 171);
+    margin: auto;
+    padding-bottom: 260px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .controls2{
+        width: 290px;
+        flex-direction: column; /* Stack sections on smaller screens */
+    }
+    .canvas{
+        width: 300px;
+        height: 300px;
+    }
+  
+  }
